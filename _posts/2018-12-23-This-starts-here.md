@@ -1,0 +1,11 @@
+---
+title:  "This starts here"
+header:
+  teaser: #"/assets/images/500x300.png"
+categories: 
+  - General
+tags:
+  - update
+---
+
+A friend of mine once said, "Even if you don't have time why not start anyway? At least that way in two years you can lament the progress instead of not even trying." 

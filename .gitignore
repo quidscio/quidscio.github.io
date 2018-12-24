@@ -1,3 +1,19 @@
+# came with folder
 _site
 .sass-cache
 .jekyll-metadata
+
+# came with minimal-mistakes theme
+*.gem
+*.sublime-project
+*.sublime-workspace
+.bundle
+_asset_bundler_cache
+codekit-config.json
+example/_site
+Gemfile.lock
+node_modules
+npm-debug.log*
+
+# rmh - added by me 
+readme-todo.txt
