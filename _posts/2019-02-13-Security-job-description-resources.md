@@ -3,7 +3,7 @@ title:  "Security Job Descriptions"
 header:
   teaser: #"/assets/images/500x300.png"
 categories: 
-  - Securty
+  - Security
 tags:
   - update
 ---
