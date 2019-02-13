@@ -5,11 +5,11 @@ header:
 categories: 
   - Security
 tags:
-  - update
+  - security
 ---
 
 
-Stu Hirst posted a LinkedIn plea to end combination job descriptions for security professionals. 
+Stu Hirst [posted a LinkedIn plea](https://www.linkedin.com/feed/update/urn:li:activity:6500994465631653889/) to end combination job descriptions for security professionals. 
 One day and 204 comments later, the post collected a quantity of resources addressing the problem. 
 As I'm forgetful...a list summary: 
 
@@ -57,7 +57,7 @@ As I'm forgetful...a list summary:
 * [Index to numerous event talks such as BSides.](https://github.com/PaulSec/awesome-sec-talks)
 
 
-[Index to IR resources and talks.](https://github.com/meirwah/awesome-incident-response)
+* [Index to IR resources and talks.](https://github.com/meirwah/awesome-incident-response)
 
 
 * [Article highlighting the tight working relationship needed between classic IT security and development](https://hackernoon.com/introducing-the-infosec-colour-wheel-blending-developers-with-red-and-blue-security-teams-6437c1a07700)
