@@ -1,0 +1,6 @@
+_site
+.sass-cache
+.jekyll-metadata
+
+readme_todo.txt
+config.yml.bak
