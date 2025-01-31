@@ -1,0 +1,15 @@
+---
+layout: default
+title: Home
+---
+
+<h1>Welcome</h1>
+<p>Enjoy some highly selective thoughts:</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>

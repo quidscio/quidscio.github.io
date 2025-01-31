@@ -1,0 +1,20 @@
+title: Quid scio? 
+description: Less IS more
+#show_downloads: true
+google_analytics:
+theme: jekyll-theme-midnight
+url: "http://polaris360.com"
+
+# Add a navigation menu
+navigation:
+  - title: Home
+    url: /
+  - title: Posts
+    url: /posts/
+  - title: About
+    url: /about/
+
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title/
