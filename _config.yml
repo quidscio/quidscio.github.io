@@ -4,7 +4,7 @@ description: Less IS more
 google_analytics:
 
 # Need to fill these in before pushing up
-repository: your-github-username/your-repo-name
+repository: https://github.com/quidscio/quidscio.github.io.git
 # in the meantime, do this in the exec session 
 # export PAGES_REPO_NWO=your-github-username/your-repo-name 
 # EXEC
