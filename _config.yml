@@ -2,7 +2,19 @@ title: Quid scio?
 description: Less IS more
 #show_downloads: true
 google_analytics:
-theme: jekyll-theme-midnight
+
+# Need to fill these in before pushing up
+repository: your-github-username/your-repo-name
+# in the meantime, do this in the exec session 
+# export PAGES_REPO_NWO=your-github-username/your-repo-name 
+# EXEC
+# bundle exec jekyll s --livereload 
+
+
+#theme: jekyll-theme-midnight
+#remote_theme: "pages-themes/midnight@v0.2.0"
+theme: null 
+
 url: "http://polaris360.com"
 
 # Add a navigation menu
@@ -18,3 +30,11 @@ collections:
   posts:
     output: true
     permalink: /posts/:title/
+
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-sass-converter 
+  - jekyll-remote-theme
+  - jekyll-seo-tag
