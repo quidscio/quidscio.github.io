@@ -3,17 +3,15 @@ description: Less IS more
 #show_downloads: true
 google_analytics:
 
-# Need to fill these in before pushing up
-repository: https://github.com/quidscio/quidscio.github.io.git
-# in the meantime, do this in the exec session 
-# export PAGES_REPO_NWO=your-github-username/your-repo-name 
-# EXEC
-# bundle exec jekyll s --livereload 
+# GitHub Pages repository format
+repository: quidscio/quidscio.github.io
+# Git URL can be specified in a different variable if needed for other purposes
+git_url: https://github.com/quidscio/quidscio.github.io.git
 
+theme: jekyll-theme-midnight
+remote_theme: pages-themes/midnight
 
-#theme: jekyll-theme-midnight
-#remote_theme: "pages-themes/midnight@v0.2.0"
-theme: null 
+# Note: PAGES_REPO_NWO environment variable is no longer needed with this setup
 
 url: "http://polaris360.com"
 
@@ -35,6 +33,7 @@ sass:
   sass_dir: _sass
   style: compressed
 plugins:
-  - jekyll-sass-converter 
+  - jekyll-sass-converter
   - jekyll-remote-theme
   - jekyll-seo-tag
+  - jekyll-theme-midnight  # Add this

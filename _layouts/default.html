@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     {% include head-custom.html %}
   </head>
-  <body>
+  <body class="test-border">
       <div id="header">
         <nav>
           <ul>
@@ -43,12 +43,32 @@
           <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
           <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span>
+          <!-- <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span> -->
         </div>
 
         {{ content }}
 
       </section>
+
+      <div>
+        <span class="credits">
+          Original theme by <a href="https://twitter.com/mattgraham">mattgraham</a>
+        </span>
+      </div>
+
+      <div class="post-navigation">
+        {% if page.previous.url %}
+        <a class="previous" href="{{ page.previous.url }}">&laquo; Prev: {{ page.previous.title | truncate: 25 }}</a>
+        {% endif %}
+        
+        {% if page.previous.url and page.next.url %}
+        <span class="separator"> | </span>
+        {% endif %}
+        
+        {% if page.next.url %}
+        <a class="next" href="{{ page.next.url }}">&raquo; Next: {{ page.next.title | truncate: 25 }}</a>
+        {% endif %}
+      </div>
 
     </div>
   </body>

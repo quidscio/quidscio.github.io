@@ -2,3 +2,79 @@
 ---
 
 @import "jekyll-theme-midnight";
+
+
+// Override navigation button styles
+#header nav ul li a {
+    background: linear-gradient(#505050, #383838) !important;
+    background-color: #484848 !important;
+    border: 1px solid #2d2d2d !important;
+    box-shadow: inset 0px 1px 0px rgba(255,255,255,.1), 0px 3px 7px rgba(0,0,0,.5) !important;
+    color: #ffffff !important;  // Bright white text
+    text-shadow: 0px 1px 0px rgba(0,0,0,.5) !important;  // Add depth
+    font-weight: bold !important;  // Make text bold
+    font-size: 16px !important;  // Slightly larger font
+    
+    &:hover {
+        background: linear-gradient(#404040, #2a2a2a) !important;
+        background-color: #363636 !important;
+        border: 1px solid #1c1c1c !important;
+    }
+}
+
+// Softer link colors (keeping your previous changes)
+a {
+    color: #b89d3f !important;
+    
+    &:hover {
+        color: #d4b84f !important;
+    }
+}
+
+// Navigation link colors
+.wrapper .post-navigation a {
+    color: #b89d3f !important;
+    
+    &:hover {
+        color: #d4b84f !important;
+    }
+}
+
+// Post navigation styles
+.wrapper .post-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 1em 0;
+    margin-top: 2em;
+    border-top: 1px solid #434343;  // Match theme's border color
+    white-space: nowrap;
+}
+
+// Keep navigation colors consistent
+.wrapper .post-navigation a {
+    color: #b89d3f !important;
+    
+    &:hover {
+        color: #d4b84f !important;
+    }
+}
+
+.wrapper .post-navigation a:hover {
+    color: #ffeb9b;  // Match theme's link hover color
+}
+
+.wrapper .post-navigation .separator {
+    color: #f0e7d5;  // Match theme's text color
+}
+
+.credits {
+    font-size: 10px !important;  // Smaller text size
+    color: #666 !important;      // Muted color
+    margin-top: 2em !important;  // Space above the credits
+}
+
+.credits a {
+    font-size: 10px !important;  // Keep link size consistent
+}
