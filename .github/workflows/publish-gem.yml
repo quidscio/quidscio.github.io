@@ -16,7 +16,7 @@ jobs:
           ruby-version: '3.2'
       - name: Build gem
         run: |
-          gem build github-pages.gemspec
+          gem build jekyll-theme-midnight.gemspec
       - name: Publish
         run: |
-          gem push github-pages.gem --key ${{ secrets.PAGES_GEM_PUBLISH }}
+          gem push jekyll-theme-midnight.gem --key ${{ secrets.PAGES_GEM_PUBLISH }}
