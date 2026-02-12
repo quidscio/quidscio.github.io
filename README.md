@@ -18,6 +18,8 @@ Do NOT edit/commit from Windows. Use WSL instead to ensure action script execute
 2) Run the local server:
 
    `bundle exec jekyll serve`
+   or better 
+   `bundle exec jekyll serve --livereload --force_polling`
 
 3) Open the preview:
 
