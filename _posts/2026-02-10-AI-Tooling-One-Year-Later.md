@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "AI Tooling One Year Later"
-date: 2026-02-10
+date: 2026-02-10 
 categories: AI
 ---
 
@@ -246,15 +246,16 @@ Desktop automation tools such as Claude Desktop or AskUI also come to mind.
 A major downside is that web UI terms of service often prohibit accessing services through non-human means.
 Accordingly, efforts to automate the web UI can be exposed legally and practically.
 
-{% comment %}
-Rubric for scenarios (not part of final article):
-- The major components
-- Effort to create
-- Inputs provided
-- Usage experience
-- Challenges encountered
-- Lessons informing next scenario
-{% endcomment %}
+<!--
+**Rubric for Scenarios** Not to be part of final article
+  Check that outline follows
+    The major components
+    Effort to create
+    Inputs provided 
+    Usage experience 
+    Challenges encountered 
+    Lessons informing next scenario 
+-->
 ## Takeaways Above the Tech
 
 Frontier models have come a long way in the last 12 months, largely through improvements in available tools, including search.
