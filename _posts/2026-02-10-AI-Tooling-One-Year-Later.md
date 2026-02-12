@@ -17,6 +17,8 @@ Still, outputs required substantial human correction and steering.
 Web UIs like ChatGPT, Claude, and Perplexity produced vastly superior results.
 Their advantage was not just model size, but orchestration, search depth, retry logic, and synthesis layers invisible to the user.
 
+![AI Android chasing Runbook]({{ "/assets/images/AI-Tooling-One-Year-Later/runbook-race.png" | relative_url }})
+
 Much has changed in the past year, so I thought it was a good time to reconsider the approach.
 A job application is a good reference case for evaluating AI workflow approaches, and the same patterns show up in investment research where key signals can be subtle and hard to anticipate.
 In this article, I focus on the job application example.
@@ -270,3 +272,5 @@ Coach humans on web UI prompting for each step.
 Automate some steps while leaving others in the web UI.
 This approach also reduces terms of service exposure from automating web UI interactions.
 In this example, research and cover iteration should remain interactive steps.
+
+![Runbook and AI running together](/assets/images/AI-Tooling-One-Year-Later/runbook-together.png)
