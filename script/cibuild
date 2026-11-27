@@ -6,4 +6,3 @@ JEKYLL_ENV=production bundle exec jekyll build --baseurl ""
 bundle exec ruby -EUTF-8 -S htmlproofer ./_site --check-html --check-sri --disable-external
 bundle exec rubocop -D --config .rubocop.yml
 bundle exec script/validate-html
-gem build jekyll-theme-midnight.gemspec
