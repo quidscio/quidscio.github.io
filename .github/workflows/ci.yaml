@@ -1,18 +1,25 @@
+name: CI
+
 on:
   push:
   pull_request:
     types: [opened, synchronize]
+
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
     name: script/cibuild
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2
+          ruby-version: '3.2'
+          bundler: '2.6.3'
           bundler-cache: true
-      - name: build
-        run: script/bootstrap
-      - name: test
+      - name: Build and validate the site
         run: script/cibuild

@@ -67,7 +67,7 @@ As I'm forgetful...a list summary:
 * [UK working conference supported by OWASP to host collaboration between developers and application security practitioners. Offered as an opportunity to collaboratively develop job and role descriptions.](https://open-security-summit.org/)
 
 
-* [Article illustrating the breadth and importance of the security challenge.]([https://vanillaflavorweb.wordpress.com/2014/03/30/security-does-it-really-matter/](https://vanillaflavorweb.wordpress.com/2014/03/30/security-does-it-really-matter/))
+* [Article illustrating the breadth and importance of the security challenge.](https://vanillaflavorweb.wordpress.com/2014/03/30/security-does-it-really-matter/)
 
 
 * [Raytheon service help companies train security specialists over a 2-year period.](https://www.raytheon.com/ourcompany/rpsuk/uk-cyber-apprenticeship)
