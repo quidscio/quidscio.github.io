@@ -1,54 +1,28 @@
-# Usage
+# Quid scio?
 
-This repo is a Jekyll site and theme using the GitHub Pages build pipeline. The site is published from the `master` branch, and the `origin` remote is set to `https://github.com/quidscio/quidscio.github.io.git`.
+This repository is the Markdown source for [Quid scio?](https://quidscio.github.io/), a Jekyll site using the Midnight theme. GitHub Pages builds from the root of `origin/master`. Each post on GitHub Pages is the primary version.
 
-Do NOT edit/commit from Windows. Use WSL instead to ensure action script execute bits remain set. 
+## Author and review posts
 
-## Prerequisites
+Follow the [post-authoring procedure](docs/Post-authoring-procedure_md-pages-LI.md) for filenames, front matter, approval, and preparing LinkedIn Article copy. Keep post sources in `_posts/` and their images in `assets/images/`.
 
-- Ruby 3.2 (matches CI)
-- Bundler (`gem install bundler`)
+Posts show publication dates above the title and previous/next links at both ends. The desktop reading column is capped at 1,000px and the mobile layout uses Midnight's existing sizing.
 
-## Local preview workflow
+## Preview locally in WSL
 
-1) Install dependencies:
+Use WSL for edits and commits so the executable bits on the build scripts are preserved. The local Ruby version is pinned in `.ruby-version` to 3.2.6. The current WSL bundle uses Bundler 2.6.3, which is also the version used by CI. Install any missing project gems with `bundle install`.
 
-   `script/bootstrap`
+```bash
+bundle check
+bundle exec jekyll serve --livereload --force_polling
+```
 
-2) Run the local server:
+Open the [local posts index](http://127.0.0.1:4000/posts/). On a Windows-mounted checkout, polling lets Jekyll detect saves from Windows editors. Restart Jekyll when changing `_config.yml`.
 
-   `bundle exec jekyll serve`
-   or better 
-   `bundle exec jekyll serve --livereload --force_polling`
+## Validate and publish
 
-3) Open the preview:
+Run `script/cibuild` in WSL to build the site in production mode and run HTMLProofer, RuboCop, and W3C HTML and CSS validation. HTMLProofer checks the generated site's internal links and assets. Check important external links separately.
 
-   `http://127.0.0.1:4000/`
+Review the diff and stage only the approved posts and assets. A local commit records the change. Pushing `master` publishes it through GitHub Pages.
 
-Jekyll rebuilds as you edit files; refresh the browser to see updates.
-
-## Publish workflow (GitHub Pages)
-
-1) Check changes:
-
-   `git status`
-
-2) Commit:
-
-   `git add -A`
-   `git commit -m "Update site"`
-
-3) Push to GitHub:
-
-   `git push origin master`
-
-GitHub Pages will build and publish the site at `https://quidscio.github.io/`.
-
-## Workflow coexistence 
-
-Local preview runs locally w/o impacting GH publishing. 
-Publishing happens with a push to `origin` on `master`.
-
-## Known issues and notes
-
-- none? 
+After an authorized push, confirm that both CI and the Pages deployment pass for the pushed commit. Open the deployed post and check its visible publication date, canonical URL, and images. [Repository Actions](https://github.com/quidscio/quidscio.github.io/actions)
