@@ -2,8 +2,8 @@
 
 set -e
 
-bundle exec jekyll build
-bundle exec htmlproofer ./_site --check-html --check-sri --typhoeus-config='{"headers":{"User-Agent":"Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/81.0"}}'
+JEKYLL_ENV=production bundle exec jekyll build --baseurl ""
+bundle exec ruby -EUTF-8 -S htmlproofer ./_site --check-html --check-sri --disable-external
 bundle exec rubocop -D --config .rubocop.yml
 bundle exec script/validate-html
 gem build jekyll-theme-midnight.gemspec
