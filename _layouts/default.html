@@ -45,6 +45,12 @@
 
         {% include post-navigation.html position="top" %}
 
+        {% if page.collection == 'posts' and page.date %}
+          <p class="post-date">
+            Published <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+          </p>
+        {% endif %}
+
         {{ content }}
 
       </section>
