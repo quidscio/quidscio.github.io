@@ -13,7 +13,7 @@ remote_theme: pages-themes/midnight
 
 # Note: PAGES_REPO_NWO environment variable is no longer needed with this setup
 
-url: "http://polaris360.com"
+url: "https://quidscio.github.io"
 
 # Add a navigation menu
 navigation:
