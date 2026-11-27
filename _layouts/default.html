@@ -43,6 +43,8 @@
           <!-- <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/mattgraham">mattgraham</a></span> -->
         </div>
 
+        {% include post-navigation.html position="top" %}
+
         {{ content }}
 
       </section>
@@ -53,19 +55,7 @@
         </span>
       </div>
 
-      <div class="post-navigation">
-        {% if page.previous.url %}
-        <a class="previous" href="{{ page.previous.url }}">&laquo; Prev: {{ page.previous.title | truncate: 25 }}</a>
-        {% endif %}
-        
-        {% if page.previous.url and page.next.url %}
-        <span class="separator"> | </span>
-        {% endif %}
-        
-        {% if page.next.url %}
-        <a class="next" href="{{ page.next.url }}">&raquo; Next: {{ page.next.title | truncate: 25 }}</a>
-        {% endif %}
-      </div>
+      {% include post-navigation.html %}
 
     </div>
   </body>

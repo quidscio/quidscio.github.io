@@ -52,6 +52,12 @@ a {
     white-space: nowrap;
 }
 
+.wrapper .post-navigation-top {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+}
+
 // Keep navigation colors consistent
 .wrapper .post-navigation a {
     color: #b89d3f !important;
