@@ -40,6 +40,33 @@ a {
     }
 }
 
+@media screen and (min-width: 721px) {
+    .wrapper.wrapper--post,
+    .wrapper.wrapper--post > section {
+        max-width: 825px;
+    }
+}
+
+.certification-banner {
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    margin: 0 0 20px;
+    padding: 12px 16px;
+    background-color: #fff;
+}
+
+.certification-banner a {
+    width: 100%;
+    max-width: 600px;
+}
+
+.certification-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 // Post navigation styles
 .wrapper .post-navigation {
     display: flex;

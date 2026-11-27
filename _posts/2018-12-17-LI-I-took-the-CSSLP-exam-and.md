@@ -9,7 +9,11 @@ categories: security
 
 *Originally published on [LinkedIn](https://www.linkedin.com/pulse/i-took-csslp-exam-robert-hines).*
 
-<!-- The LinkedIn export marks this image as unavailable. -->
+<figure class="certification-banner">
+  <a href="https://www.isc2.org/certifications/csslp">
+    <img src="{{ '/assets/images/LI-I-took-the-CSSLP-exam-and/csslp-horizontal.jpg' | relative_url }}" width="7016" height="2167" alt="Certified Secure Software Lifecycle Professional (CSSLP), ISC2 Certification">
+  </a>
+</figure>
 
 ISC2 promotes CSSLP as an application security cluefullness signal. Certification requires taking an exam, professional experience, and peer endorsement. This experience guide might help others through the exam process. Candidates have 240 minutes to answer 175 questions. Domain topics seem germane for AppSec. Simple enough.
 
